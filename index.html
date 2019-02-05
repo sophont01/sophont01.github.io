@@ -191,7 +191,8 @@ doi       = {10.1109/WACV.2018.00049},}
         	      </p>
 	              <div class="paper" id="ICVGIP16">
         	        <a href="javascript:toggleblock('ICVGIP16_abs')">abstract</a> |
-                	<a shape="rect" href="javascript:togglebib('ICVGIP16')" class="togglebib">bibtex</a>
+                	<a shape="rect" href="javascript:togglebib('ICVGIP16')" class="togglebib">bibtex</a> |
+			<a href="https://github.com/sophont01/fStackIID">code</a>
 			<p align="justify" style="font-size:12px;"> <i id="ICVGIP16_abs">
 			In this paper, we presents a novel method (RGBF-IID) for intrinsic image decomposition of a wild scene without any restrictions on the complexity, illumination or scale of the
 			image. We use focal stacks of the scene as input. A focal stack captures a scene at varying focal distances. Since focus depends on distance to the object, this representation has
@@ -216,6 +217,81 @@ doi       = {10.1145/3009977.3010046},}
 	        </tr>
 		
 
+		<!-- ICVGIP Aditya -->
+		<br> <tr>
+	            <td width="33%" valign="top"><a href="./data/images/tag2vec.png"><img src="./data/images/tag2vec.png" width="100%" style="border-style: none; margin-bottom: 100px; margin-top: 100px;"></a>
+        	    <td width="67%" valign="top">
+              		<p  style="margin-top:100px;"><a href="./data/docs/a94-singh.pdf" id="ICVGIP16A_pdf">
+			<heading>Learning to hash-tag videos with Tag2Vec</heading></a><br>
+			<a href="https://cvit.iiit.ac.in/people/ms-by-research/ms-students/aditya-singh">Aditya Singh</a>, Saurabh Saini, <a href="http://rajvishah.weebly.com/">Rajvi Shah</a>, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
+			<em>ICVGIP</em>, 2016 
+        	      </p>
+	              <div class="paper" id="ICVGIP16A">
+        	        <a href="javascript:toggleblock('ICVGIP16A_abs')">abstract</a> |
+                	<a shape="rect" href="javascript:togglebib('ICVGIP16A')" class="togglebib">bibtex</a> | 
+			<a href="https://arxiv.org/abs/1612.04061">arxiv</a>
+			<p align="justify" style="font-size:12px;"> <i id="ICVGIP16A_abs">
+			User-given tags or labels are valuable resources for semantic understanding of visual media such as images and videos. Recently, a new type of labeling mechanism known as hash-tags
+		       	have become increasingly popular on social media sites. In this paper, we study the problem of generating relevant and useful hash-tags for short video clips. Traditional data-driven
+		       	approaches for tag enrichment and recommendation use direct visual similarity for label transfer and propagation. We attempt to learn a direct low-cost mapping from
+		       	video to hash-tags using a two step training process. We first employ a natural language processing (NLP) technique, skip-gram models with neural network training to
+			learn a low-dimensional vector representation of hash-tags (Tag2Vec) using a corpus of ∼ 10 million hash-tags. We then train an embedding function to map video features to
+ 			the low-dimensional Tag2vec space. We learn this embedding for 29 categories of short video clips with hash-tags. A query video without any tag-information can then be 
+			directly mapped to the vector space of tags using the learned embedding and relevant tags can be found by performing a simple nearest-neighbor retrieval in the Tag2Vec space. We
+			validate the relevance of the tags suggested by our system qualitatively and quantitatively with a user study.
+			</i></p>
+<pre><code>@inproceedings{DBLP:conf/icvgip/SinghSSN16,
+author    = {Aditya Singh and Saurabh Saini and Rajvi Shah and P. J. Narayanan},
+title     = {Learning to hash-tag videos with Tag2Vec},
+booktitle = {Proceedings of the Tenth Indian Conference on Computer Vision, Graphics and Image Processing, {ICVGIP} 2016, Guwahati, Assam, India, December 18-22, 2016},
+pages     = {94:1--94:8},
+year      = {2016},
+url       = {https://doi.org/10.1145/3009977.3010035},
+doi       = {10.1145/3009977.3010035},}
+</code></pre>
+	            </div>
+        	    </td>
+	        </tr>
+
+
+		<!-- GCPR 2016 -->
+		<br> <tr>
+	            <td width="33%" valign="top"><a href="./data/images/gcpr.png"><img src="./data/images/gcpr.png" width="100%" style="border-style: none; margin-bottom: 100px; margin-top: 100px;"></a>
+        	    <td width="67%" valign="top">
+              		<p  style="margin-top:100px;"><a href="https://cvit.iiit.ac.in/images/ConferencePapers/2016/GCPR2016.pdf" id="GCPR16_pdf">
+			<heading>From Traditional to Modern : Domain Adaptation for Action Classification in Short Social Video Clips</heading></a><br>
+			<a href="https://cvit.iiit.ac.in/people/ms-by-research/ms-students/aditya-singh">Aditya Singh</a>, Saurabh Saini, <a href="http://rajvishah.weebly.com/">Rajvi Shah</a>, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
+			<em>GCPR</em>, 2016 
+        	      </p>
+	              <div class="paper" id="GCPR16">
+        	        <a href="javascript:toggleblock('GCPR16_abs')">abstract</a> | 
+                	<a shape="rect" href="javascript:togglebib('GCPR16')" class="togglebib">bibtex</a> | 
+			<a href="http://arxiv.org/abs/1610.05613">arxiv</a>
+			<p align="justify" style="font-size:12px;"> <i id="GCPR16_abs">
+			Short internet video clips like vines present a significantly wild distribution compared to traditional video datasets. 
+			In this paper, we focus on the problem of unsupervised action classification in wild vines using traditional la- beled datasets.
+		       	To this end, we use a data augmentation based simple domain adaptation strategy. We utilize semantic word2vec space as a common subspace to embed
+		       	video features from both, labeled source domain and unlabled target domain. Our method incrementally augments the labeled source with target samples
+		       	and iteratively modifies the embedding function to bring the source and target distributions together. Additionally, we utilize a multi-modal representation
+		       	that incorporates noisy semantic information available in form of hash-tags. We show the effectiveness of this simple adaptation technique on a test set
+		       	of vines and achieve notable improvements in performance.
+			</i></p>
+<pre><code>@inproceedings{DBLP:conf/dagm/SinghSSN16,
+author    = {Aditya Singh and Saurabh Saini and Rajvi Shah and P. J. Narayanan},
+title     = {From Traditional to Modern: Domain Adaptation for Action Classification in Short Social Video Clips},
+booktitle = {Pattern Recognition - 38th German Conference, {GCPR} 2016, Hannover, Germany, September 12-15, 2016, Proceedings},
+pages     = {245--257},
+year      = {2016},
+url       = {https://doi.org/10.1007/978-3-319-45886-1\_20},
+doi       = {10.1007/978-3-319-45886-1\_20},}
+</code></pre>
+	            </div>
+        	    </td>
+	        </tr>
+
+
+
+
 
 	      </table>
 	     </div>
@@ -226,5 +302,7 @@ doi       = {10.1145/3009977.3010046},}
     <script xml:space="preserve" language="JavaScript">	hideblock('IJCVSPIID_abs');	</script>
     <script xml:space="preserve" language="JavaScript">	hideblock('WACV18_abs');	</script>
     <script xml:space="preserve" language="JavaScript">	hideblock('ICVGIP16_abs');	</script>
+    <script xml:space="preserve" language="JavaScript">	hideblock('ICVGIP16A_abs');	</script>
+    <script xml:space="preserve" language="JavaScript">	hideblock('GCPR16_abs');	</script>
   </body>
 </html>
