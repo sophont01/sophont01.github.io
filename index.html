@@ -3,6 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      	<style type="text/css">
+	/* Stolen from Sergey and Jon Barron */
+	  a {
+	  color: #1772d0;
+	  text-decoration:none;
+	  }
+	  a:focus, a:hover {
+	  color: #f09228;
+	  text-decoration:none;
+	  }
+	  body,td,th {
+        	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	        font-size: 15px
+	  }
+	  strong {
+        	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        	font-size: 14px
+	  }
+	  strongred {
+        	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	        color: 'red'
+	        font-size: 14px
+	  }
+	  heading {
+        	font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+	        font-size: 15px;
+        	font-weight: 700
+  	 }
+	 </style>
+    <script type="text/javascript" src="javascripts/hidebib.js"></script>
     <title>Saurabh Saini</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
@@ -14,14 +44,16 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Saurabh Saini</h1>
+	    <header>
+	     <h1>Saurabh Saini</h1>
+	     <center>
 	<img src="./data/images/profile.jpg" alt="profile pic">
 	<p><small>saurabh[dot]saini[at]research[dot]iiit[dot]ac[dot]in</small></p>
+		    </center>
       </header>
       <section>
-		      <div style="background-image: url(./data/images/3_a.png); float:left; height:350px; width: 900px; opacity: 1;">
-			      <center>
+	      <div style="background-image: url(./data/images/3_a.png); float:left; height:350px; width: 900px; opacity: 1;">
+	      <center>
 	      <p style="margin:50px;"><br>
 	      I am a Ph.D. student under the guidance of <a href="https://faculty.iiit.ac.in/~pjn/">Prof. P. J. Narayanan</a> in <a href="http://cvit.iiit.ac.in">Center for Visual Information Technology (CVIT)</a> lab, a part of <a href="https://kcis.iiit.ac.in/">Kohli Center on Intelligent Systems (KCIS)</a>, at the <a href="https://www.iiit.ac.in/">International Institute of Information Technology-Hyderabad (IIIT-H) </a> India.
 	      <br><br>
@@ -33,10 +65,166 @@
 	      Personally, I enjoy sketching (graphite), reading (non-fiction) and writing (poems). 
 
 	     <br><br></p>
-			      </center>
-		      </div>
-      </section>
-    </div>
+	     </center>
+	     </div>
+	     &nbsp;
+	     <p><br> <br><h1>Publications</h1></p>
+	     <!--<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">-->
+	     <div style="float:left; height:1000px; width:900px">
+		     <hr>
+		     <table align="center" border="0" cellspacing="0" cellpadding="20">
+
+		     <!-- IJCV -->
+		    <tr>
+	            <td width="33%" valign="top"><a href="./data/images/sp10.png"><img src="./data/images/sp10.png" width="100%" style="border-style: none; margin-bottom: 100px; margin-top: 20px;"></a>
+        	    <td width="67%" valign="top">
+              		<p>
+			<a id="IJCVSPIID_pdf">
+			<heading>Semantic Hierarchical Priors for Intrinsic Image Decomposition</heading>
+			</a>
+			<br>
+			Saurabh Saini,  <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
+			<em>submitted to IJCV</em>
+        	      </p>
+	              <div class="paper" id="IJCVSPIID">
+        	        <a href="javascript:toggleblock('IJCVSPIID_abs')">abstract</a> |
+                	<a shape="rect" href="javascript:togglebib('IJCVSPIID')" class="togglebib">bibtex</a> 
+			<p align="justify" style="font-size:12px;"> <i id="IJCVSPIID_abs">
+			Intrinsic Image Decomposition (IID) is a challenging and interesting computer vision problem with various applications in several fields. We present novel
+			semantic priors and an integrated approach for single image IID that involves analyzing image at three hierarchical context levels. Local context priors capture
+			scene properties at each pixel within a small neighbourhood. Mid-level context priors encode object level semantics. Global context priors establish correspondences at the scene level. 
+			Our semantic priors are designed on both fixed and flexible regions, using selective search method and Convolutional Neural Network features. 
+			Our IID method is an iterative multistage optimization scheme and consists of two complementary formulations: L2 smoothing for shading and L1 sparsity for reflectance. Experiments and analysis of our
+			method indicate the utility of our semantic priors and structured hierarchical analysis in an IID framework. We compare our method with other contemporary IID
+			solutions and show results with lesser artifacts. Finally, we highlight that proper choice and encoding of prior knowledge can produce competitive results even when
+			compared to end-to-end deep learning IID methods, signifying the importance of such priors. We believe that the insights and techniques presented in this paper would be useful in the future IID research.
+        	        </i></p>
+<pre><code>@inproceedings{DBLP:conf/bmvc/SainiN18,
+author    = {Saurabh Saini and P. J. Narayanan},
+title     = {Semantic Priors for Intrinsic Image Decomposition},
+booktitle = {British Machine Vision Conference 2018, {BMVC} 2018, Northumbria University, Newcastle, UK, September 3-6, 2018},
+pages     = {154},
+year      = {2018},
+url       = {http://bmvc2018.org/contents/papers/0796.pdf},}
+</code></pre>
+	            </div>
+        	    </td>
+		    </tr>
+		
+		     
+		<!-- BMVC -->
+		<br> <tr>
+	            <td width="33%" valign="top"><a href="./data/images/blockDiagram.png"><img src="./data/images/blockDiagram.png" width="100%" style="border-style: none; margin-bottom: 100px; margin-top: 100px;"></a>
+        	    <td width="67%" valign="top">
+              		<p  style="margin-top:100px;"><a href="http://bmvc2018.org/contents/papers/0796.pdf" id="SF">
+			<heading>Semantic Priors for Intrinsic Image Decomposition</heading></a><br>
+			Saurabh Saini, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan </a><br>
+			<em>BMVC</em>, 2018 <b> (Oral) <a href="http://bmvc2018.org/awards.html">[Best Industrial Paper, Honourable Mention]</a></b>
+        	      </p>
+	              <div class="paper" id="sf">
+        	        <a href="javascript:toggleblock('sf_abs')">abstract</a> |
+                	<a shape="rect" href="javascript:togglebib('sf')" class="togglebib">bibtex</a>
+        	        <p align="justify" style="font-size:12px;"> <i id="sf_abs">Intrinsic Image Decomposition (IID) is a challenging and interesting computer vision
+			problem with various applications in several fields. We present novel semantic priors and
+			an integrated approach for single image IID that involves analyzing image at three hierarchical context levels. Local context priors capture scene properties at each pixel within a
+			small neighborhood. Mid-level context priors encode object level semantics. Global context priors establish correspondences at the scene level. Our semantic priors are designed
+			on both fixed and flexible regions, using selective search method and Convolutional Neural Network features. Experiments and analysis of our method indicate the utility of our
+			weak semantic priors and structured hierarchical analysis in an IID framework. We compare our method with the current state-of-the-art and show results with lesser artifacts.
+			Finally, we highlight that proper choice and encoding of prior knowledge can produce
+			competitive results compared to end-to-end deep learning IID methods, signifying the
+			importance of such priors. We believe that the insights and techniques presented in this
+			paper would be useful in the future IID research.</i></p>
+<pre><code>@inproceedings{DBLP:conf/bmvc/SainiN18,
+author    = {Saurabh Saini and P. J. Narayanan},
+title     = {Semantic Priors for Intrinsic Image Decomposition},
+booktitle = {British Machine Vision Conference 2018, {BMVC} 2018, Northumbria University, Newcastle, UK, September 3-6, 2018},
+pages     = {154},
+year      = {2018},
+url       = {http://bmvc2018.org/contents/papers/0796.pdf},}
+</code></pre>
+	            </div>
+        	    </td>
+	        </tr>
+
+		<!-- WACV 2018 -->
+		<br> <tr>
+	            <td width="33%" valign="top"><a href="./data/images/3dcap.png"><img src="./data/images/3dcap.png" width="100%" style="border-style: none; margin-bottom: 100px; margin-top: 100px;"></a>
+        	    <td width="67%" valign="top">
+              		<p  style="margin-top:100px;"><a href="./data/docs/08354153.pdf" id="WACV18_pdf">
+			<heading>Human Shape Capture and Tracking at Home.</heading></a><br>
+		<a href="https://researchweb.iiit.ac.in/~gaurav.mishra/">Gaurav Mishra</a>, Saurabh Saini, <a href="https://scholar.google.co.in/citations?user=pDvg7X4AAAAJ&hl=en">Kiran Varanasi</a>, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
+			<em>WACV</em>, 2018 
+        	      </p>
+	              <div class="paper" id="WACV18">
+        	        <a href="javascript:toggleblock('WACV18_abs')">abstract</a> |
+                	<a shape="rect" href="javascript:togglebib('WACV18')" class="togglebib">bibtex</a>
+			<p align="justify" style="font-size:12px;"> <i id="WACV18_abs">
+			Human body tracking typically requires specialized capture set-ups. Although pose tracking is available in consumer devices like Microsoft Kinect, it is restricted to stick
+			figures visualizing body part detection. In this paper, we propose a method for full 3D human body shape and motion capture of arbitrary movements from the depth channel
+			of a single Kinect, when the subject wears casual clothes. We do not use the RGB channel or an initialization procedure that requires the subject to move around in front of the
+			camera. This makes our method applicable for arbitrary clothing textures and lighting environments, with minimal subject intervention. Our method consists of 3D surface
+			feature detection and articulated motion tracking, which is regularized by a statistical human body model. We also propose the idea of a Consensus Mesh (CMesh) which is the
+			3D template of a person created from a single view point. We demonstrate tracking results on challenging poses and argue that using CMesh along with statistical body models
+			can improve tracking accuracies. Quantitative evaluation of our dense body tracking shows that our method has very little drift which is improved by the usage of CMesh.
+        	        </i></p>
+<pre><code>@inproceedings{DBLP:conf/wacv/MishraSVN18,
+author    = {Gaurav Mishra and Saurabh Saini and Kiran Varanasi and P. J. Narayanan},
+title     = {Human Shape Capture and Tracking at Home},
+booktitle = {2018 {IEEE} Winter Conference on Applications of Computer Vision, {WACV} 2018, Lake Tahoe, NV, USA, March 12-15, 2018},
+pages     = {390--399},
+year      = {2018},
+doi       = {10.1109/WACV.2018.00049},}
+</code></pre>
+	            </div>
+        	    </td>
+	        </tr>
+
+
+		<!-- ICVGIP -->
+		<br> <tr>
+	            <td width="33%" valign="top"><a href="./data/images/6_Outdoor3.jpg"><img src="./data/images/6_Outdoor3.jpg" width="100%" style="border-style: none; margin-bottom: 100px; margin-top: 100px;"></a>
+        	    <td width="67%" valign="top">
+              		<p  style="margin-top:100px;"><a href="./data/docs/a88-saini.pdf" id="ICVGIP16_pdf">
+			<heading>Intrinsic image decomposition using focal stacks.</heading></a><br>
+			Saurabh Saini, <a href="https://researchweb.iiit.ac.in/~parikshit.sakurikar/">Parikshit Sakurikar </a>, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
+			<em>ICVGIP</em>, 2016 
+        	      </p>
+	              <div class="paper" id="ICVGIP16">
+        	        <a href="javascript:toggleblock('ICVGIP16_abs')">abstract</a> |
+                	<a shape="rect" href="javascript:togglebib('ICVGIP16')" class="togglebib">bibtex</a>
+			<p align="justify" style="font-size:12px;"> <i id="ICVGIP16_abs">
+			In this paper, we presents a novel method (RGBF-IID) for intrinsic image decomposition of a wild scene without any restrictions on the complexity, illumination or scale of the
+			image. We use focal stacks of the scene as input. A focal stack captures a scene at varying focal distances. Since focus depends on distance to the object, this representation has
+			information beyond an RGB image towards an RGBD image with depth. We call our representation an RGBF image to highlight this. We use a robust focus measure and generalized
+		       	random walk algorithm to compute dense probability maps across the stack. These maps are used to define sparse local and global pixel neighbourhoods, adhering to the structure
+		       	of the underlying 3D scene. We use these neighbourhood correspondences with standard chromaticity assumptions as constraints in an optimization system. We present
+			our results on both indoor and outdoor scenes using manually captured stacks of random objects under natural as well as artificial lighting conditions. We also test our system on
+			a larger dataset of synthetically generated focal stacks from NYUv2 and MPI Sintel datasets and show competitive performance against current state-of-the-art IID methods that
+			use RGBD images. Our method provides a strong evidence for the potential of RGBF modality in place of RGBD in computer vision
+			</i></p>
+<pre><code>@inproceedings{DBLP:conf/icvgip/SainiSN16,
+author    = {Saurabh Saini and Parikshit Sakurikar and P. J. Narayanan},
+title     = {Intrinsic image decomposition using focal stacks},
+booktitle = {Proceedings of the Tenth Indian Conference on Computer Vision, Graphics and Image Processing, {ICVGIP} 2016, Guwahati, Assam, India, December 18-22, 2016},
+pages     = {88:1--88:8},
+year      = {2016},
+url       = {https://doi.org/10.1145/3009977.3010046},
+doi       = {10.1145/3009977.3010046},}
+</code></pre>
+	            </div>
+        	    </td>
+	        </tr>
+		
+
+
+	      </table>
+	     </div>
+    </section>
     <script src="javascripts/scale.fix.js"></script>
+    <script xml:space="preserve" language="JavaScript">	hideallbibs();	</script>
+    <script xml:space="preserve" language="JavaScript">	hideblock('sf_abs');	</script>
+    <script xml:space="preserve" language="JavaScript">	hideblock('IJCVSPIID_abs');	</script>
+    <script xml:space="preserve" language="JavaScript">	hideblock('WACV18_abs');	</script>
+    <script xml:space="preserve" language="JavaScript">	hideblock('ICVGIP16_abs');	</script>
   </body>
 </html>
