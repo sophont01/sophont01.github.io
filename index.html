@@ -91,6 +91,50 @@
 		     <hr>
 		     <table align="center" border="0" cellspacing="0" cellpadding="20">
 
+
+				<!-- Aakash arxiv -->
+				<tr>
+					<td width="33%" valign="top"><a href="./data/images/matNN.jpg"><img src="./data/images/matNN.jpg" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+					<td width="67%" valign="top"><br>
+						<p>
+							<a id="NNrendering_pdf" href="./data/docs/1908.09530.pdf"><heading>Neural Rendering for Material Visualization</heading></a><br>
+							Aakash KT, <a href="https://researchweb.iiit.ac.in/~parikshit.sakurikar/">Parikshit Sakurikar</a>, Saurabh Saini, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
+							<em>Under Review</em>
+						</p>
+						<div class="paper" id="NNrendering">
+							<a href="javascript:toggleblock('NNrendering_abs')">abstract</a> |
+							<a shape="rect" href="javascript:togglebib('NNrendering')" class="togglebib">bibtex</a> |
+							<a href="https://aakashkt.github.io/neural-renderer-material-visualization.html">webpage</a> | 
+							<a href="https://github.com/AakashKT/NeuralMaterialVisualization">code</a> |
+						<a href="http://arxiv.org/abs/1908.09530">arxiv</a>	
+					<p align="justify" style="font-size:12px;"> <i id="NNrendering_abs">
+						Photo realism in computer generated imagery is crucially dependent on how well an artist is able to recreate real-world materials in the scene.
+						The workflow for material modeling and editing typically involves manual tweaking of material parameters and uses a standard path tracing engine for visual feedback.
+						A lot of time may be spent in iterative selection and rendering of materials at an appropriate quality.
+						In this work, we propose a convolutional neural network based workflow which quickly generates high-quality ray traced material visualizations on a shaderball.
+						Our novel architecture allows for control over environment lighting and assists material selection along with the ability to render spatially-varying materials.
+						Additionally, our network enables control over environment lighting which gives an artist more freedom and provides better visualization of the rendered material.
+						Comparison with state-of-the-art denoising and neural rendering techniques suggests that our neural renderer performs faster and better.
+						We provide a interactive visualization tool and release our training dataset to foster further research in this area.
+							</i></p>
+<pre><code>@ARTICLE{2019arXiv190809530K,
+author = {KT, Aakash and Sakurikar, Parikshit and Saini, Saurabh and Narayanan, P. J.},
+title = "{A Flexible Neural Renderer for Material Visualization}",
+journal = {arXiv e-prints},
+keywords = {Computer Science - Graphics},
+year = "2019",
+month = "Aug",
+archivePrefix = {arXiv},
+eprint = {1908.09530},
+primaryClass = {cs.GR},}
+</code></pre>
+						</div>
+
+
+					</td>
+				</tr>
+				<tr>
+
 		     <!-- IJCV -->
 			 <tr>
 	            <td width="33%" valign="top"><a href="./data/images/sp10.png"><img src="./data/images/sp10.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
@@ -350,7 +394,8 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
     </section>
     <script src="javascripts/scale.fix.js"></script>
     <script xml:space="preserve" language="JavaScript">	hideallbibs();	</script>
-    <script xml:space="preserve" language="JavaScript">	hideblock('sf_abs');	</script>
+	<script xml:space="preserve" language="JavaScript">	hideblock('sf_abs');	</script>
+	<script xml:space="preserve" language="JavaScript">	hideblock('NNrendering_abs');	</script>
     <script xml:space="preserve" language="JavaScript">	hideblock('IJCVSPIID_abs');	</script>
     <script xml:space="preserve" language="JavaScript">	hideblock('WACV18_abs');	</script>
     <script xml:space="preserve" language="JavaScript">	hideblock('ICVGIP16_abs');	</script>
