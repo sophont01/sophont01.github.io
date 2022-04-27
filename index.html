@@ -90,19 +90,60 @@
 	     <div style="float:left; height:500px; width:900px">
 		     <hr>
 		     <table align="center" border="0" cellspacing="0" cellpadding="20">
-
+			
+				<!-- ICCV -->
+				<tr>
+					<td width="33%" valign="top"><a href="./data/images/SNV.png"><img src="./data/images/SNV.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+					<td width="67%" valign="top"><br>
+							<p>
+				<a id="ICCVsnv_pdf" href="./data/docs/snv_iccv2021.pdf">
+				<heading>Learning to Stylize Novel Views</heading>
+				</a>
+				<br>
+				<a href="https://hhsinping.github.io/">Hsin-Ping Huang</a>, <a href="https://hytseng0509.github.io/">Hung-Yu Tseng</a>, Saurabh Saini, 
+				<a href="https://scholar.google.com/citations?user=hdQhiFgAAAAJ&hl=en">Maneesh Singh</a>>, <a href="https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a><br>
+				<em>ICCV, 2021 (Poster)</em>
+						</p>
+						<div class="paper" id="ICCVsnv">
+						<a href="javascript:toggleblock('ICCVsnv_abs')">abstract</a> |
+						<a shape="rect" href="javascript:togglebib('ICCVsnv')" class="togglebib">bibtex</a> |
+						<a href="https://hhsinping.github.io/3d_scene_stylization/">webpage</a> |
+						<a href="https://github.com/hhsinping/stylescene">code</a> | 
+						<a href="https://arxiv.org/abs/2105.13509">arxiv (+ supplementary)</a> 	
+				<p align="justify" style="font-size:12px;"> <i id="ICCVsnv_abs">
+					We tackle a 3D scene stylization problem — generating stylized images of a scene from arbitrary novel views given
+					a set of images of the same scene and a reference image	of the desired style as inputs. Direct solution of combining
+					novel view synthesis and stylization approaches lead to results that are blurry or not consistent across different views.
+					We propose a point cloud-based method for consistent 3D	scene stylization. First, we construct the point cloud by 
+					back-projecting the image features to the 3D space. Second, we develop point cloud aggregation modules to gather
+					the style information of the 3D scene, and then modulate the features in the point cloud with a linear transformation
+					matrix. Finally, we project the transformed features to 2D space to obtain the novel views. Experimental results on
+					two diverse datasets of real-world scenes validate that our	method generates consistent stylized novel view synthesis
+					results against other alternative approaches.
+						</i></p>
+	<pre><code>@article{Huang2021LearningTS,
+		title={Learning to Stylize Novel Views},
+		author={Hsin-Ping Huang and Hung-Yu Tseng and Saurabh Saini and Maneesh Kumar Singh and Ming-Hsuan Yang},
+		journal={2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
+		year={2021},
+		pages={13849-13858}}
+	</code></pre>
+					</div>
+					</td>
+				</tr>
+				
 
 				<!-- IJCV -->
 				<tr>
 					<td width="33%" valign="top"><a href="./data/images/sp10.png"><img src="./data/images/sp10.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
 					<td width="67%" valign="top"><br>
 						  <p>
-				<a id="IJCVSPIID_pdf">
+				<a id="IJCVSPIID_pdf" href="./data/docs/1902.03830.pdf">
 				<heading>Semantic Hierarchical Priors for Intrinsic Image Decomposition</heading>
 				</a>
 				<br>
 				Saurabh Saini,  <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
-				<em>Under review IJCV</em>
+				<em>Arxiv, 2019</em>
 					  </p>
 					  <div class="paper" id="IJCVSPIID">
 						<a href="javascript:toggleblock('IJCVSPIID_abs')">abstract</a> |
@@ -118,13 +159,12 @@
 				solutions and show results with lesser artifacts. Finally, we highlight that proper choice and encoding of prior knowledge can produce competitive results even when
 				compared to end-to-end deep learning IID methods, signifying the importance of such priors. We believe that the insights and techniques presented in this paper would be useful in the future IID research.
 						</i></p>
-	<pre><code>@inproceedings{DBLP:conf/bmvc/SainiN18,
-	author    = {Saurabh Saini and P. J. Narayanan},
-	title     = {Semantic Priors for Intrinsic Image Decomposition},
-	booktitle = {British Machine Vision Conference 2018, {BMVC} 2018, Northumbria University, Newcastle, UK, September 3-6, 2018},
-	pages     = {154},
-	year      = {2018},
-	url       = {http://bmvc2018.org/contents/papers/0796.pdf},}
+	<pre><code>@article{Saini2019SemanticHP,
+		title={Semantic Hierarchical Priors for Intrinsic Image Decomposition},
+		author={Saurabh Saini and P. J. Narayanan},
+		journal={ArXiv},
+		year={2019},
+		volume={abs/1902.03830}}
 	</code></pre>
 					</div>
 					</td>
@@ -186,7 +226,9 @@ primaryClass = {cs.GR},}
         	      </p>
 	              <div class="paper" id="sf">
         	        <a href="javascript:toggleblock('sf_abs')">abstract</a> |
-                	<a shape="rect" href="javascript:togglebib('sf')" class="togglebib">bibtex</a>
+                	<a shape="rect" href="javascript:togglebib('sf')" class="togglebib">bibtex</a> | 
+					<a href="./data/docs/0796.pdf">pdf</a> | 
+					<a href="./data/docs/0796_supplementary.pdf">supplementary</a>
         	        <p align="justify" style="font-size:12px;"> <i id="sf_abs">Intrinsic Image Decomposition (IID) is a challenging and interesting computer vision
 			problem with various applications in several fields. We present novel semantic priors and
 			an integrated approach for single image IID that involves analyzing image at three hierarchical context levels. Local context priors capture scene properties at each pixel within a
@@ -213,7 +255,7 @@ url       = {http://bmvc2018.org/contents/papers/0796.pdf},}
 		    <tr>
 	            <td width="33%" valign="top"><a href="./data/images/3dcap.png"><img src="./data/images/3dcap.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
         	    <td width="67%" valign="top">
-              		<p  style="margin-top:20px;"><a href="./data/docs/08354153.pdf" id="WACV18_pdf">
+              		<p  style="margin-top:20px;"><a href="https://ieeexplore.ieee.org/document/8354153" id="WACV18_pdf">
 			<heading>Human Shape Capture and Tracking at Home.</heading></a><br>
 		<a href="https://researchweb.iiit.ac.in/~gaurav.mishra/">Gaurav Mishra</a>, Saurabh Saini, <a href="https://scholar.google.co.in/citations?user=pDvg7X4AAAAJ&hl=en">Kiran Varanasi</a>, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a><br>
 			<em>WACV</em>, 2018  <b> (Oral) </b> 
@@ -221,7 +263,11 @@ url       = {http://bmvc2018.org/contents/papers/0796.pdf},}
 	              <div class="paper" id="WACV18">
         	        <a href="javascript:toggleblock('WACV18_abs')">abstract</a> |
                 	<a shape="rect" href="javascript:togglebib('WACV18')" class="togglebib">bibtex</a> | 
-			<a href="http://cvit.iiit.ac.in/research/projects/cvit-projects/smpltracking">webpage</a>
+			<a href="http://cvit.iiit.ac.in/research/projects/cvit-projects/smpltracking">webpage</a> |
+			<a href="./data/docs/08354153.pdf">pdf</a> | 
+			<a href="https://www.youtube.com/watch?v=DNqn1O12ICI">supplementary</a> | 
+			<a href="https://www.youtube.com/watch?v=mF6nqpwuA9E&t=6s">presentation</a>
+
 			<p align="justify" style="font-size:12px;"> <i id="WACV18_abs">
 			Human body tracking typically requires specialized capture set-ups. Although pose tracking is available in consumer devices like Microsoft Kinect, it is restricted to stick
 			figures visualizing body part detection. In this paper, we propose a method for full 3D human body shape and motion capture of arbitrary movements from the depth channel
@@ -256,7 +302,9 @@ doi       = {10.1109/WACV.2018.00049},}
 	              <div class="paper" id="ICVGIP16">
         	        <a href="javascript:toggleblock('ICVGIP16_abs')">abstract</a> |
                 	<a shape="rect" href="javascript:togglebib('ICVGIP16')" class="togglebib">bibtex</a> |
-			<a href="https://github.com/sophont01/fStackIID">code</a>
+			<a href="https://github.com/sophont01/fStackIID">code</a> |
+			<a href="./data/docs/a88-saini.pdf">pdf</a> | 
+			<a href="./data/docs/paperId_218_supp.pdf">supplementary</a>
 			<p align="justify" style="font-size:12px;"> <i id="ICVGIP16_abs">
 			In this paper, we presents a novel method (RGBF-IID) for intrinsic image decomposition of a wild scene without any restrictions on the complexity, illumination or scale of the
 			image. We use focal stacks of the scene as input. A focal stack captures a scene at varying focal distances. Since focus depends on distance to the object, this representation has
@@ -357,7 +405,7 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
 
 		<!-- PROJECTS -->
 
-		  <p><br><h1>Projects</h1></p>
+		  <p><br><h1>Other Projects</h1></p>
 		  <table align="center" border="0" cellspacing="0" cellpadding="20">
 		    <tr>
 	            <td width="33%" valign="top"><a href="./data/images/quatRes_3.png"><img src="./data/images/quatRes_3.png" width="75%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
@@ -369,6 +417,15 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
 				</td>
 			</tr>
 			<tr>
+				<td width="33%" valign="top"><a href="./data/images/IlluSpec.png"><img src="./data/images/IlluSpec.png" width="75%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+				<td width="67%" valign="top"><br>
+				<p><heading>Illumination Spectra Separation</heading><br>
+							The project aims at studying the feasibility of decomposing scene illumination based on the color spectra of the illuminanat,
+							generating spatially varying illuination_map and illuminated image.
+					</p>
+				</td>
+			</tr>
+			<!-- <tr>
 				<td width="33%" valign="top"><a href="./data/images/matNN.jpg"><img src="./data/images/matNN.jpg" width="75%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
 				<td width="67%" valign="top"><br><br>
 						<p><heading>Neural Rendering for Material Visualization</heading><br>
@@ -376,8 +433,8 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
 							BRDF models on a shader ball for material visualization and selection.
 						</p>
 				</td>
-			</tr>
-			<tr>
+			</tr> -->
+			<!-- <tr>
 				<td width="33%" valign="top"><a href="./data/images/3Dcategorization.png"><img src="./data/images/3Dcategorization.png" width="75%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
 				<td width="67%" valign="top"><br><br>
 						<p><heading>AutoML assisted 3D CNN analysis</heading><br>
@@ -385,7 +442,7 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
 							using AutoML techniques towards the goal of better understanding the strengths and weaknesses of 3D CNNs for various 3D problems.
 						</p>
 				</td>
-			</tr>	
+			</tr>	 -->
 		</table>
 		</div>
 		 &nbsp;<br>
