@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134998489-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,7 @@
 	  gtag('js', new Date());
 	
 	  gtag('config', 'UA-134998489-1');
-	</script>
+	</script> -->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -55,8 +55,9 @@
   <body>
     <div class="wrapper">
 	    <header>
-	     <h1>Saurabh Saini</h1>
-	     <center>
+			<center>
+	     <em><h1 style="color:salmon; font-family:cursive; font-size:250%; ">Saurabh Saini</h1></em>
+	     
 	<img src="./data/images/profileSmall.jpg" alt="profile pic"><br><br>
 	<p><small>saurabh[dot]saini[at]research[dot]iiit[dot]ac[dot]in</small></p>
 	<p><small>
@@ -69,28 +70,169 @@
 		 </center>
       </header>
       <section>
-	      <div style="background-image: url(./data/images/3_a.png); float:left; height:350px; width: 900px; opacity: 1;">
-	      <center>
+	     <div style="background-image: url(./data/images/3_a.png); float:left; height:450px; width: 900px; opacity: 1;">  
+		<p><br><h1 style="color:salmon;">&emsp;&emsp;About Me</h1></p>
+		<center>
 	      <p style="margin:50px;"><br>
 	      I am a Ph.D. student under the guidance of <a href="https://faculty.iiit.ac.in/~pjn/">Prof. P. J. Narayanan</a> in <a href="http://cvit.iiit.ac.in">Center for Visual Information Technology (CVIT)</a> lab, a part of <a href="https://kcis.iiit.ac.in/">Kohli Center on Intelligent Systems (KCIS)</a>, at the <a href="https://www.iiit.ac.in/">International Institute of Information Technology-Hyderabad (IIIT-H) </a> India.
 	      <br><br>
 	      My general research interest is in the topics related to Computer Vision, Machine Learning and Optimization, especially applied to 2D or 3D reconstruction.
-	      Currently I am working on Inverse Rendering and Inverse Light Transport problems. Specifically, I am focusing on Intrinsic Image Decomposition (separating object property based vs. light related components in an image).
+	      Currently I am working on <b>Inverse Rendering</b> problems. Specifically, I am focusing on Intrinsic Image Decomposition (separating object property based vs. light related components in an image) 
+		  and Image Based Relighting (analyzing and editing image illumination).
 	      <br><br>
-	      Apart from this, I also like wandering in the domains of 3D human body modeling, registration and tracking, feature embedding, transfer learning and geometric learning.
-	      <br><br>
-	      Personally, I enjoy sketching (graphite), reading (non-fiction) and writing (poems). 
+	      Apart from this, I also like wandering in the domains of 3D modeling, registration, tracking, feature embedding, transfer learning, geometric learning, explainable AI etc. (the list grows ... :)
+	      <br><br><br>
+	      Personally, sometimes I enjoy sketching (graphite), reading (non-fiction) and writing (poems). 
 
 	     <br><br></p>
 	     </center>
 	     </div>
 	     &nbsp;
-	     <p><br> <br><h1>Publications</h1></p>
+	     <p><br> <br><h1 style="color:salmon;">&emsp;&emsp;Publications</h1></p>
 	     <!--<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">-->
 	     <div style="float:left; height:500px; width:900px">
 		     <hr>
 		     <table align="center" border="0" cellspacing="0" cellpadding="20">
 			
+				<!-- ICVGIP Saurabh -->
+				<tr>
+					<td width="33%" valign="top"><a href="./data/images/QFSEF.png"><img src="./data/images/QFSEF.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+					<td width="67%" valign="top"><br>
+					<p>
+						<a id="QFSEF_pdf" href="./data/docs/QFSEF.pdf">
+						<heading>Quaternion Factorized Simulated Exposure Fusion for Low Light Image Enhancement</heading>
+						</a>
+						<br>
+						Saurabh Saini, <a href="https://scholar.google.co.in/citations?user=3HKjt_IAAAAJ&hl=en&oi=ao">P J Narayanan</a><br>
+						<em>ICVGIP, 2022 </em><b>(Oral)</b>
+					</p>
+					<div class="paper" id="QFSEF">
+						<a href="javascript:toggleblock('QFSEF_abs')" class="toggleblock">abstract</a> |
+						<a shape="rect" href="javascript:togglebib('QFSEF')" class="togglebib">bibtex</a> |
+						<a href="">webpage</a> |
+						<a href="https://github.com/sophont01/QFSEF">code</a> | 
+						<a href="">arxiv</a> |
+						<a href="./data/docs/QFSEF_poster.pdf">poster</a> 	
+						<abs><p align="justify" style="font-size:12px;"> <i id="QFSEF_abs">
+						Image Fusion maximizes the visual information at each pixel location by merging content
+						from multiple images in order to produce an enhanced image. 
+						Exposure Fusion, specifically, fuses a bracketed exposure stack of poorly lit images
+						to generate a properly illuminated image. Given a single input image, 
+						exposure fusion can still be employed on a ‘simulated’ exposure stack,
+						leading to direct single image contrast and low-light enhancement.
+						In this work, we present a novel ‘Quaternion Factorized Simulated Exposure Fusion’ (QFSEF)
+						method by factorizing an input image into multiple illumination consistent layers.
+						To this end, we use an iterative sparse matrix factorization scheme by representing
+						the image as a two-dimensional pure quaternion matrix. Theoretically, our representation
+						is based on the dichromatic reflection model and accounts for the two scene illumination
+						characteristics by factorizing each progressively generated image into separate
+						specular and diffuse components. We empirically prove the advantages of our
+						factorization scheme over other exposure simulation methods by using it for the
+						low-light image enhancement task.
+						</i></p></abs>
+<pre>
+<code>
+@inproceedings{goel2022styletrf,
+author = {Saini, Saurabh and Narayanan, P. J.},
+title = {Quaternion Factorized Simulated Exposure Fusion for Low Light Image Enhancement},
+year = {2022},
+doi = {10.1145/3571600.3571604},
+booktitle = {Proceedings of the Thirteenth Indian Conference on Computer Vision, Graphics and Image Processing},
+series = {ICVGIP '22}}
+</code>
+</pre>
+					</div>
+					</td>
+				</tr>
+
+
+				<!-- ICVGIP Avani -->
+				<tr>
+					<td width="33%" valign="top"><a href="./data/images/tcavIID.png"><img src="./data/images/tcavIID.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+					<td width="67%" valign="top"><br>
+					<p>
+						<a id="tcavIID_pdf" href="./data/docs/tcavIID.pdf">
+						<heading>Interpreting Intrinsic Image Decomposition using Concept Activations</heading>
+						</a>
+						<br>
+						<a href="https://avani17101.github.io/">Avani Gupta</a>, Saurabh Saini, <a href="https://scholar.google.co.in/citations?user=3HKjt_IAAAAJ&hl=en&oi=ao">P J Narayanan</a><br>
+						<em>ICVGIP, 2022 </em><b>(Oral) <p style="color:orange">*****<a href="https://events.iitgn.ac.in/2022/icvgip/best_paper_awards.html">[Best Paper Award]</a>*****</p></b>
+					</p>
+					<div class="paper" id="tcavIID">
+						<a href="javascript:toggleblock('tcavIID_abs')" class="toggleblock">abstract</a> |
+						<a shape="rect" href="javascript:togglebib('tcavIID')" class="togglebib">bibtex</a> |
+						<a href="">webpage</a> |
+						<a href="">code</a> | 
+						<a href="">arxiv</a> | 
+						<a href="">poster</a>	
+						<abs><p align="justify" style="font-size:12px;"> <i id="tcavIID_abs">
+							Evaluation of ill-posed problems like Intrinsic Image Decomposition (IID) is challenging.
+							IID involves decomposing an image into its constituent illumination-invariant Reflectance (R) and albedo-invariant Shading (S) components.
+							Contemporary IID methods use Deep Learning models and require large datasets for training.
+							The evaluation of IID is carried out on either synthetic Ground Truth images or sparsely annotated natural images.
+							A scene can be split into reflectance and shading in multiple, valid ways.
+							Comparison with one specific decomposition in the ground-truth images used by current IID evaluation metrics like LMSE, MSE, DSSIM, WHDR, SAW AP %, etc. is inadequate.
+							Measuring R-S disentanglement is a better way to evaluate the quality of IID.
+							Inspired by ML interpretability methods, we propose Concept Sensitivity Metrics (CSM) that directly measure disentanglement using sensitivity to relevant concepts.
+						</i></p></abs>
+<pre>
+<code>
+@inproceedings{goel2022styletrf,
+author = {Gupta, Avani and Saini, Saurabh and Narayanan, P. J.},
+title = {Interpreting Intrinsic Image Decomposition using Concept Activations},
+year = {2022},
+doi = {10.1145/3571600.3571603},
+booktitle = {Proceedings of the Thirteenth Indian Conference on Computer Vision, Graphics and Image Processing},
+series = {ICVGIP '22}}
+</code>
+</pre>
+					</div>
+					</td>
+				</tr>
+
+				<!-- ICVGIP Rahul -->
+				<tr>
+					<td width="33%" valign="top"><a href="./data/images/styleTRF.png"><img src="./data/images/styleTRF.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+					<td width="67%" valign="top"><br>
+					<p>
+						<a id="styleTRF_pdf" href="./data/docs/styleTRF.pdf">
+						<heading>StyleTRF: Stylizing Tensorial Radiance Fields</heading>
+						</a>
+						<br>
+						<a href="https://rahulgoel.xyz/">Rahul Goel</a>, <a href="https://dhawal1939.github.io/">Sirikonda Dhawal</a> Saurabh Saini, <a href="https://scholar.google.co.in/citations?user=3HKjt_IAAAAJ&hl=en&oi=ao">P J Narayanan</a><br>
+						<em>ICVGIP, 2022 </em><b>(Spotlight) </b>
+					</p>
+					<div class="paper" id="styleTRF">
+						<a href="javascript:toggleblock('styleTRF_abs')" class="toggleblock">abstract</a> |
+						<a shape="rect" href="javascript:togglebib('styleTRF')" class="togglebib">bibtex</a> |
+						<a href="https://rahul-goel.github.io/StyleTRF/">webpage</a> |
+						<a href="">code</a> | 
+						<a href="">arxiv</a> |
+						<a href="./data/docs/styleTRF_poster.pdf">poster</a>	
+						<abs><p align="justify" style="font-size:12px;"> <i id="styleTRF_abs">
+							Stylized view generation of scenes captured casually using a camera has received much attention recently.
+							The geometry and appearance of the scene are typically captured as neural point sets or neural radiance fields in the previous work.
+							An image stylization method is used to stylize the captured appearance by training its network jointly or iteratively with the structure capture network.
+							The state-of-the-art SNeRF method trains the NeRF and stylization network in an alternating manner. These methods have high training time and require joint optimization.
+							In this work, we present StyleTRF, a compact, quick-to-optimize strategy for stylized view generation using TensoRF.
+							The appearance part is finetuned using sparse stylized priors of a few views rendered using the TensoRF representation for a few iterations.
+							Our method thus effectively decouples style-adaption from view capture and is much faster than the previous methods. We show state-of-the-art results on several scenes used for this purpose.
+						</i></p></abs>
+<pre>
+<code>
+@inproceedings{goel2022styletrf,
+author = {Goel, Rahul and Sirikonda, Dhawal and Saini, Saurabh and Narayanan, P. J.},
+title = {StyleTRF: Stylizing Tensorial Radiance Fields},
+year = {2022},
+doi = {10.1145/3571600.3571643},
+booktitle = {Proceedings of the Thirteenth Indian Conference on Computer Vision, Graphics and Image Processing},
+series = {ICVGIP '22}}
+</code>
+</pre>
+					</div>
+					</td>
+				</tr>
+
 				<!-- ICCV -->
 				<tr>
 					<td width="33%" valign="top"><a href="./data/images/SNV.png"><img src="./data/images/SNV.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
@@ -101,7 +243,7 @@
 				</a>
 				<br>
 				<a href="https://hhsinping.github.io/">Hsin-Ping Huang</a>, <a href="https://hytseng0509.github.io/">Hung-Yu Tseng</a>, Saurabh Saini, 
-				<a href="https://scholar.google.com/citations?user=hdQhiFgAAAAJ&hl=en">Maneesh Singh</a>>, <a href="https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a><br>
+				<a href="https://scholar.google.com/citations?user=hdQhiFgAAAAJ&hl=en">Maneesh Singh</a>, <a href="https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a><br>
 				<em>ICCV, 2021 (Poster)</em>
 						</p>
 						<div class="paper" id="ICCVsnv">
@@ -121,13 +263,14 @@
 					two diverse datasets of real-world scenes validate that our	method generates consistent stylized novel view synthesis
 					results against other alternative approaches.
 						</i></p>
-	<pre><code>@article{Huang2021LearningTS,
-		title={Learning to Stylize Novel Views},
-		author={Hsin-Ping Huang and Hung-Yu Tseng and Saurabh Saini and Maneesh Kumar Singh and Ming-Hsuan Yang},
-		journal={2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
-		year={2021},
-		pages={13849-13858}}
-	</code></pre>
+<pre><code>
+@article{Huang2021LearningTS,
+title={Learning to Stylize Novel Views},
+author={Hsin-Ping Huang and Hung-Yu Tseng and Saurabh Saini and Maneesh Kumar Singh and Ming-Hsuan Yang},
+journal={2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
+year={2021},
+pages={13849-13858}}
+</code></pre>
 					</div>
 					</td>
 				</tr>
@@ -159,13 +302,14 @@
 				solutions and show results with lesser artifacts. Finally, we highlight that proper choice and encoding of prior knowledge can produce competitive results even when
 				compared to end-to-end deep learning IID methods, signifying the importance of such priors. We believe that the insights and techniques presented in this paper would be useful in the future IID research.
 						</i></p>
-	<pre><code>@article{Saini2019SemanticHP,
-		title={Semantic Hierarchical Priors for Intrinsic Image Decomposition},
-		author={Saurabh Saini and P. J. Narayanan},
-		journal={ArXiv},
-		year={2019},
-		volume={abs/1902.03830}}
-	</code></pre>
+<pre><code>
+@article{Saini2019SemanticHP,
+title={Semantic Hierarchical Priors for Intrinsic Image Decomposition},
+author={Saurabh Saini and P. J. Narayanan},
+journal={ArXiv},
+year={2019},
+volume={abs/1902.03830}}
+</code></pre>
 					</div>
 					</td>
 				</tr>
@@ -222,7 +366,7 @@ primaryClass = {cs.GR},}
               		<p  style="margin-top:20px;"><a href="http://bmvc2018.org/contents/papers/0796.pdf" id="SF">
 			<heading>Semantic Priors for Intrinsic Image Decomposition</heading></a><br>
 			Saurabh Saini, <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan </a><br>
-			<em>BMVC</em>, 2018 <b> (Oral) <a href="http://bmvc2018.org/awards.html">[Best Industrial Paper, Honourable Mention]</a></b>
+			<em>BMVC</em>, 2018 <b> (Oral) <p style="color:orange">*****<a href="http://bmvc2018.org/awards.html">[Best Industrial Paper, Honourable Mention]</a>*****</p></b>
         	      </p>
 	              <div class="paper" id="sf">
         	        <a href="javascript:toggleblock('sf_abs')">abstract</a> |
@@ -404,16 +548,24 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
 
 
 		<!-- PROJECTS -->
-
-		  <p><br><h1>Other Projects</h1></p>
+		<div style="float:left; height:500px; width:900px">
+		  <p><br><br><h1 style="color:salmon;">&emsp;&emsp;Other Projects</h1></p>
 		  <table align="center" border="0" cellspacing="0" cellpadding="20">
 		    <tr>
 	            <td width="33%" valign="top"><a href="./data/images/quatRes_3.png"><img src="./data/images/quatRes_3.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
         	    <td width="67%" valign="top"><br>
-			    <p><heading>Inverse Light Transport</heading><br>
-						The project aims at studying the feasibility of estimating bounces of light in a scene from a single image by inverting the 
-						light transport equation and possibilty of extending the specularity removal methods towards this goal.
-					</p>
+			    <p><heading>Recursuive Robust Retinex</heading><br>
+						Can we propose an improved formulation of Retinex Theory based on Robust Principal Componenet Analysis by factroizing an image into multiple sparse layers ? 
+						This might be useful in various Image Based Relighting applications like: image relighting, white balancing, object compositing, low-light enhancement, shadow-specularity editing etc.
+				</p>
+				</td>
+			</tr>
+			<tr>
+	            <td width="33%" valign="top"><a href="./data/images/QFSEF_res.png"><img src="./data/images/QFSEF_res.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+        	    <td width="67%" valign="top"><br>
+			    <p><heading>Unrolled Robust Retinex for Low Light Enhancement</heading><br>
+						Can we build an unrolled architecture for Robust Retnex which can be self-supervised and employed for Low Light Enhancement ?
+				</p>
 				</td>
 			</tr>
 			<tr>
@@ -421,7 +573,15 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
 				<td width="67%" valign="top"><br>
 				<p><heading>Illumination Spectra Separation</heading><br>
 							The project aims at studying the feasibility of decomposing scene illumination based on the color spectra of the illuminanat,
-							generating spatially varying illuination_map and illuminated image.
+							generating spatially varying illuination maps and a relit image.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="33%" valign="top"><a href="./data/images/ISRF.png"><img src="./data/images/ISRF.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+				<td width="67%" valign="top"><br>
+				<p><heading>Interactive Radiance Field Segmentation</heading><br>
+							The project aims at achieving interactive radiance field segementation for complex scenes with minimal user strokes as input for semantic object extraction and radiance field editing.
 					</p>
 				</td>
 			</tr>
@@ -444,14 +604,26 @@ doi       = {10.1007/978-3-319-45886-1\_20},}
 				</td>
 			</tr>	 -->
 		</table>
+
+
+		<!-- EMPTY area at page bottom -->
+		<!-- <p><h1 style="color:salmon;">&nbsp;</h1></p> -->
+		<img align="right" src="./data/images/calvin_thinking.png" width="30%" style="border-style: none; margin-bottom: 50px; margin-top: 0px;">
+		<!-- <img align="right" src="./data/images/calvin_reading.jpg" width="10%" style="border-style: none; margin-bottom: 50px; margin-top: 0px;"> -->
 		</div>
-		 &nbsp;<br>
 		 
 
 
+		 
     </section>
+	<br style="line-height:1000px;"> 
+
     <script src="javascripts/scale.fix.js"></script>
     <script xml:space="preserve" language="JavaScript">	hideallbibs();	</script>
+	<script xml:space="preserve" language="JavaScript">	hideblock('QFSEF_abs');	</script>
+	<script xml:space="preserve" language="JavaScript">	hideblock('tcavIID_abs');	</script>
+	<script xml:space="preserve" language="JavaScript">	hideblock('styleTRF_abs');	</script>
+	<script xml:space="preserve" language="JavaScript">	hideblock('ICCVsnv_abs');	</script>
 	<script xml:space="preserve" language="JavaScript">	hideblock('sf_abs');	</script>
 	<script xml:space="preserve" language="JavaScript">	hideblock('NNrendering_abs');	</script>
     <script xml:space="preserve" language="JavaScript">	hideblock('IJCVSPIID_abs');	</script>

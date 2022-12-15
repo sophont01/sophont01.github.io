@@ -27,12 +27,13 @@ function togglebib(paperid)
     }
 }
 
+
 function toggleblock(blockId)
 {
-   hideallbibs();
    var block = document.getElementById(blockId);
    if (block.style.display == 'none') {
     block.style.display = 'block' ;
+    block.swapStyleSheet
    } else {
     block.style.display = 'none' ;
    }
