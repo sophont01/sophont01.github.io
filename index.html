@@ -93,7 +93,53 @@
 	     <div style="float:left; height:500px; width:900px">
 		     <hr>
 		     <table align="center" border="0" cellspacing="0" cellpadding="20">
-                
+
+                <!-- CVPR 2024 My -->
+                <tr>
+                    <td width="33%" valign="top"><a href="./data/images/RSFNet.png"><img src="./data/images/RSFNet.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
+                    <td width="67%" valign="top"><br>
+                    <p>
+                        <a id="RSFNet_pdf" href="">
+                        <heading>Concept Distillation: Leveraging Human-Centered Explanations for Model Improvement</heading>
+                        </a>
+                        <br>
+                        Saurabh Saini, <a href="https://scholar.google.co.in/citations?user=3HKjt_IAAAAJ&hl=en&oi=ao">P J Narayanan</a><br>
+        
+                        <em>CVPR, 2024 (under review) </em>
+                    </p>
+                    <div class="paper" id="RSFNet">
+                        <a href="javascript:toggleblock('RSFNet_abs')" class="toggleblock">abstract</a> |
+                        <a shape="rect" href="javascript:togglebib('RSFNet')" class="togglebib">bibtex</a> |
+                        <abs><p align="justify" style="font-size:12px;"> <i id="ConDistil_abs">
+                            Low Light Enhancement (LLE) is an important step to enhance images captured with insufficient light.
+                            Several local and global methods have been proposed over the years for this problem. Decomposing the
+                            image into multiple factors using an appropriate property is the first step in many LLE methods. In this paper,
+                            we present a new additive factorization that treats images to be composed of multiple latent specular components
+                            that can be estimated by modulating the sparsity during decomposition. We propose a model-driven learnable RSFNet
+                            framework to estimate these factors by unrolling the optimization into network layers. The factors are interpretable
+                            by design and can be manipulated directly for different tasks. We train our LLE system in a {\em zero-reference} manner
+                            without the need for any paired or unpaired supervision. Our system improves the state-of-the-art performance on
+                            standard benchmarks and achieves better generalization on multiple other datasets. The specularity factors
+                            can supplement other task specific fusion networks by inducing prior information for enhancement
+                            tasks like deraining, deblurring and dehazing with negligible overhead as shown in the paper.
+                        </i></p></abs>
+<pre>
+<code>
+    @inproceedings{
+        sainiRSFNet,
+        title={Specularity Factorization for Low Light Enhancement},
+        author={Saurabh Saini and P J Narayanan},
+        booktitle={CVPR, (under review)},
+        year={2024},
+        }
+</code>
+</pre>
+                    </div>
+                    </td>
+                </tr>
+
+
+
                 <!-- NeurIPS AVANI -->
                 <tr>
 					<td width="33%" valign="top"><a href="./data/images/conceptDistil.png"><img src="./data/images/conceptDistil.png" width="100%" style="border-style: none; margin-bottom: 20px; margin-top: 20px;"></a>
