@@ -1,4 +1,375 @@
-<h1>RSFNet: Specularity Factorization for Low Light Enhancement</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="RSFNet, Inverse Rendering, Specularity, Low Light Enhancement">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSFNet: Specularity Factorization for Low Light Enhancement</title>
 
-<h2>COMING SOON</h2>
 
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://sophont01.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Related Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://sophont01.github.io/data/docs/QFSEF.pdf">
+            QFSEF
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/abs/1902.03830">
+            SHPIID
+          </a>
+          <a class="navbar-item" href="http://bmvc2018.org/contents/papers/0796.pdf">
+            SPIID
+          </a>
+          <a class="navbar-item" href="https://sophont01.github.io/data/docs/a88-saini.pdf">
+            FSIID
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">RSFNet: Specularity Factorization for Low Light Enhancement</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://sophont01.github.io/">Saurabh Saini</a></span>
+            <span class="author-block">
+              <a href="https://faculty.iiit.ac.in/~pjn/">P. J. Narayanan</a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">CVIT, IIIT-Hyderabad, India</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link.
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+                <div class="column has-text-centered">
+                    <h2> COMING SOON !</h2>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"  type="video/mp4">
+      </video> -->
+      <image src="static/images/teaser.png" class="img-responsive" alt="overview" width="100%" style="max-height: 450px;margin:auto;">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">RSFnet</span> factorizes image into multiple additive factors (top) which can be individually manipulated for various image editing applications (bottom).
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a new additive image factorization technique that treats images to be composed of multiple latent specular components that can be simply estimated recursively by modulating the sparsity during decomposition.
+            Our model-driven RSFNet estimates these factors by unrolling the optimization into network layers requiring only a few scalars to be learned.
+            The resultant factors are interpretable by design and can be fused for different image enhancement tasks via a network or combined directly by the user in a controllable fashion.
+            Based on RSFNet, we detail a zero-reference Low Light Enhancement (LLE) application trained without paired or unpaired supervision. 
+            Our system improves the state-of-the-art performance on standard benchmarks and achieves better generalization on multiple other datasets.
+            We also integrate our factors with other task specific fusion networks for applications like deraining, deblurring and dehazing with negligible overhead thereby highlighting the multi-domain and multi-task generalizability of our proposed RSFNet.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Method. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+
+        <!-- Block Diagram. -->
+        <h3 class="title is-4">Block Diagram</h3>
+        <div class="content has-text-justified">
+        <image src="static/images/blockDiagram.png" class="img-responsive" alt="overview" width="100%" style="max-height: 450px;margin:auto;"></image>
+          <p>
+            Our Recursive Specularity Factorization Network (RSFNet) decomposes the image into K factors using sequential Factorization Modules (FM),
+            wherein each optimization step encoded as a differentiable network layer.
+            Then we fuse, enhance, and denoise the factors using off-the-shelf task-dependent fusion network.
+          </p>
+        </div><br/>
+        <!--/ Block diagram. -->
+        </div>
+    </div>
+
+        <!-- Factors Viz. -->
+        <h3 class="title is-4">Factorization Results</h3>
+
+        <!-- Factors Viz Normal. -->
+        <section class="hero is-light is-max-desktop">
+            <div class="hero-body">
+            <h4 class="title is-6" style="text-align: center;"> For wild input image</h4>
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item item-1">
+                    <image src="static/images/facViz/iiw/119.png" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-2">
+                    <image src="static/images/facViz/iiw/32824.png" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-3">
+                    <image src="static/images/facViz/iiw/34492.png" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-4">
+                    <image src="static/images/facViz/iiw/35200.png" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-5">
+                    <image src="static/images/facViz/iiw/88276.png" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-6">
+                    <image src="static/images/facViz/iiw/97010.png" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-7">
+                    <image src="static/images/facViz/iiw/9739.png" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                </div>
+              </div>
+            </br><h4 class="title is-6" style="text-align: center;"> [ Input | 5 Factors (F1 ... F5) ] </h4>
+            </div>
+          </section></br>
+
+        <!-- Factors Viz LLE. -->
+        <section class="hero is-light is-max-desktop">
+            <div class="hero-body">
+            <h4 class="title is-6" style="text-align: center;"> For LLE input (not shown) </h4>
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item item-1">
+                    <image src="static/images/facViz/00690.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-2">
+                    <image src="static/images/facViz/00692.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-3">
+                    <image src="static/images/facViz/00697.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-4">
+                    <image src="static/images/facViz/00698.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-5">
+                    <image src="static/images/facViz/00738.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-6">
+                    <image src="static/images/facViz/00741.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-7">
+                    <image src="static/images/facViz/00744.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-8">
+                    <image src="static/images/facViz/00747.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-9">
+                    <image src="static/images/facViz/00749.jpg" class="img-responsive" alt="overview" width="100%" style="max-height: 4000px;margin:auto;">
+                    </image>
+                  </div>
+                </div>
+              </div>
+            </br><h4 class="title is-6" style="text-align: center;"> [ GT | 5 Factors (F1 ... F5) ] </h4>
+            </div>
+          </section></br>
+
+        <!-- LLE Viz. -->
+        <h3 class="title is-4">LLE Results</h3>
+        <section class="hero is-light is-max-desktop">
+            <div class="hero-body">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item item-1">
+                    <image src="static/images/LLEres/1.png" class="img-responsive" alt="overview" width="100%" style="max-height: 2000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-2">
+                    <image src="static/images/LLEres/00709.png" class="img-responsive" alt="overview" width="100%" style="max-height: 2000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-3">
+                    <image src="static/images/LLEres/00713.png" class="img-responsive" alt="overview" width="100%" style="max-height: 2000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-5">
+                    <image src="static/images/LLEres/00779.png" class="img-responsive" alt="overview" width="100%" style="max-height: 2000px;margin:auto;">
+                    </image>
+                  </div>
+                  <div class="item item-6">
+                    <image src="static/images/LLEres/22.png" class="img-responsive" alt="overview" width="100%" style="max-height: 2000px;margin:auto;">
+                    </image>
+                  </div>
+                </div>
+              </div>
+              
+            </br><h4 class="title is-6" style="text-align: center;"> [ Input | GT | Result ] </h4>
+            </div>
+          </section></br>
+
+    <!-- <div class="content has-text-justified">
+          <div class="content has-text-justified">
+            <image src="static/images/blockDiagram.png" class="img-responsive" alt="overview" width="100%" style="max-height: 450px;margin:auto;"></image>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Factors Viz. -->
+      
+    
+    <!--/ Animation. -->
+
+
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{saini2024rsfnet,
+  author    = {Saini, Saurabh and Narayanan, P. J.},
+  title     = {Specularity Factorization for Low Light Enhancement},
+  journal   = {CVPR},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-right">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Template courtesy: <a href="https://github.com/nerfies/nerfies.github.io">nerfies.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
